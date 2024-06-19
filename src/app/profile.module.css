@@ -1,0 +1,137 @@
+.main {
+  padding-top: 11vh;
+  padding-left: 5%;
+  padding-right: 5%;
+  min-height: 100vh;
+  padding-bottom: 20px;
+}
+.form {
+  display: flex;
+  flex-direction: row;
+}
+.imgContainer {
+  position: relative;
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.form img {
+  position: relative;
+  border-radius: 50%;
+}
+.icon {
+  position: absolute;
+  right: 200px;
+  bottom: 0px;
+  color: var(--primary-color);
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.fieldContainer {
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.form span input,
+.form span textarea,
+.form span select {
+  border: none;
+  border-bottom: 1px solid gray;
+  margin-right: 20px;
+  padding: 10px 20px;
+  width: 250px;
+  outline: none;
+}
+.form span {
+  display: flex;
+  align-items: center;
+  margin: 20px;
+}
+.editIcon {
+  transition: all 0.3s linear;
+  color: var(--primary-color);
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: var(--box-shadow);
+}
+
+.editIcon:hover {
+  color: gray;
+  cursor: pointer;
+}
+.updateBtnContainer {
+  width: 100%;
+}
+.updateBtn {
+  float: right;
+  transition: all 0.3s linear;
+  padding: 10px 20px;
+  cursor: pointer;
+  box-shadow: var(--box-shadow);
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  font-family: monospace;
+  text-transform: uppercase;
+  font-size: 16px;
+  color: white;
+  background-color: var(--secondary-color);
+  margin-left: 20px;
+}
+
+.updateBtn:hover {
+  background-color: white;
+  color: var(--secondary-color);
+  box-shadow: var(--inner-shadow);
+}
+.unModifiableContiner {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.serviceContainerMain {
+  display: flex;
+  flex-wrap: row;
+  flex-wrap: wrap;
+}
+.serviceCard {
+  position: relative;
+  box-shadow: var(--box-shadow);
+  padding: 20px;
+  width: 30%;
+  margin: 20px;
+}
+.trash {
+  transition: all 0.3s linears;
+  color: red;
+  float: right;
+  cursor: pointer;
+}
+.trash:hover {
+  color: gray;
+}
+
+/******************************Responsive Code********************/
+@media screen and (min-width: 300px) and (max-width: 768px) {
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+  .imgContainer {
+    width: 100vw;
+  }
+  .fieldContainer {
+    width: 100vw;
+  }
+  .serviceCard {
+    width: 100%;
+  }
+}

@@ -1,0 +1,148 @@
+.main {
+  padding: 10px 5%;
+}
+.heading {
+  color: var(--primary-color);
+  padding-bottom: 10px;
+}
+.heading span {
+  color: var(--secondary-color);
+}
+
+#error {
+  text-transform: capitalize;
+  color: red;
+}
+.importantNotes li {
+  list-style: circle;
+  color: red;
+  text-transform: capitalize;
+}
+.timeLine {
+  display: flex;
+}
+.timeLine span {
+  padding: 10px 20px;
+  margin-right: 20px;
+  width: 250px;
+  color: gray;
+  text-align: center;
+  box-shadow: var(--box-shadow);
+}
+.timeLine .activeSpan {
+  border-left: 2px solid var(--secondary-color);
+  box-shadow: var(--box-shadow);
+  color: var(--secondary-color);
+}
+
+.registrationForm input,
+.registrationForm textarea,
+.registrationForm select {
+  padding: 10px 20px;
+  width: 280px;
+  margin-bottom: 15px;
+  border: 1px solid #eee;
+  outline-color: gray;
+  outline-width: 2px;
+  font-size: 16px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+.registrationForm textarea {
+  width: 100%;
+}
+
+.signupBtnContainer {
+  display: flex;
+  justify-content: flex-end;
+}
+.resetBtn,
+.submitBtn {
+  transition: all 0.3s linear;
+  padding: 10px 20px;
+  cursor: pointer;
+  box-shadow: var(--box-shadow);
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  font-family: monospace;
+  text-transform: uppercase;
+  font-size: 16px;
+  color: white;
+  width: 200px;
+}
+
+.resetBtn {
+  background-color: var(--primary-color);
+  margin-right: 20px;
+}
+.submitBtn {
+  background-color: var(--secondary-color);
+  margin-right: 20px;
+}
+.resetBtn:hover,
+.nextBtn:hover {
+  background-color: white;
+  color: var(--primary-color);
+  box-shadow: var(--inner-shadow);
+}
+.submitBtn:hover {
+  background-color: white;
+  color: var(--secondary-color);
+  box-shadow: var(--inner-shadow);
+}
+
+.phonePeForm {
+  display: flex;
+  padding: 2% 0px;
+  justify-content: space-between;
+}
+.phonePeContentDiv {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.phonePeContentDiv h1 {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  text-transform: capitalize;
+}
+.phonePeContentDiv h1 span {
+  color: var(--secondary-color);
+}
+.agreementLogo {
+  padding: 10px;
+  box-shadow: var(--inner-shadow);
+  border-radius: 50%;
+  margin-top: 20px;
+  text-align: center;
+  width: 280px;
+  height: 280px;
+}
+.phonePe {
+  width: 200px;
+  height: 80px;
+}
+.phonePeDiv {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  box-shadow: var(--box-shadow);
+  width: 400px;
+  height: 40vh;
+}
+
+.phoneDetails {
+  padding: 30px 0px;
+  width: 100%;
+}
+
+/*******************Responsive Code*********************/
+@media screen and (min-width: 300px) and (max-width: 768px) {
+  .phonePeContentDiv {
+    display: none;
+  }
+}

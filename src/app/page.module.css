@@ -1,0 +1,455 @@
+.main {
+  padding-top: 7rem;
+  min-height: 80vh;
+}
+.heading {
+  font-size: 3rem;
+  padding: 10px 5%;
+  color: var(--primary-color);
+}
+.heading span {
+  color: var(--secondary-color);
+}
+.dNone {
+  display: none;
+}
+/************************************large Device Navbar**************************/
+
+.navbar {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  height: 3vh;
+  width: 100%;
+  padding: 2% 5%;
+  backdrop-filter: blur(10px);
+  z-index: 5;
+  background: rgba(255, 255, 255, 0.433);
+  border-bottom: 1px solid white;
+}
+.navbarImageDiv {
+  width: 40%;
+}
+.navbarImage {
+  width: 250px;
+  height: 60px;
+}
+.navbar ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+  width: 45%;
+}
+button.navbarLink {
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+  border: none;
+}
+.navbarLink {
+  transition: all 0.3s linear;
+  color: var(--black-color);
+  margin-right: 50px;
+}
+.activeLink {
+  color: var(--secondary-color);
+}
+.navbarLink:hover {
+  color: var(--secondary-color);
+  opacity: 0.7;
+}
+.navbarBtn {
+  transition: all 0.3s linear;
+  padding: 12px 20px;
+  border-radius: 5%;
+  box-shadow: var(--box-shadow);
+  color: var(--white-color);
+  text-transform: capitalize;
+}
+.navbarBtn:first-child {
+  margin-right: 10px;
+  background-color: var(--secondary-color);
+}
+.navbarBtn:last-child {
+  background-color: var(--primary-color);
+}
+.navbarBtn:first-child:hover {
+  color: var(--secondary-color);
+  background-color: var(--white-color);
+  box-shadow: var(--inner-shadow);
+}
+.navbarBtn:last-child:hover {
+  color: var(--primary-color);
+  background-color: var(--white-color);
+  box-shadow: var(--inner-shadow);
+}
+/***********************************Hero Section*****************/
+.heroSection {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.heroImageContainer {
+  padding-top: 10px;
+  display: flex;
+  width: 100%;
+  height: 70%;
+  justify-items: center;
+  justify-content: center;
+}
+.heroImageContainer img {
+  width: 40%;
+  height: 95%;
+}
+.heroContentSection {
+  width: 100%;
+  text-align: center;
+}
+.heroContentSection p {
+  padding: 0px 15%;
+  padding-bottom: 10px;
+}
+.heroContentSection h1:first-child {
+  padding: 0px 5%;
+  font-size: 3rem;
+  color: var(--primary-color);
+  line-height: 52px;
+  filter: drop-shadow(var(--box-shadow));
+}
+.heroContentSection h1 span {
+  color: var(--secondary-color);
+}
+
+/**********************************Fixed Hero Section Div******************/
+.fixedImageDiv,
+.fixedImageDiv2,
+.fixedImageDiv3,
+.fixedImageDiv4,
+.fixedImageDiv5 {
+  position: absolute;
+
+  padding: 10px 20px;
+  border-radius: 40px;
+  box-shadow: var(--box-shadow);
+  font-size: 17px;
+  backdrop-filter: blur(10px);
+}
+.fixedImageDiv p span,
+.fixedImageDiv2 p span,
+.fixedImageDiv3 p span,
+.fixedImageDiv4 p span,
+.fixedImageDiv5 p span {
+  color: var(--secondary-color);
+  margin: 0px 5px;
+}
+.fixedImageDiv {
+  top: 20%;
+  right: 20%;
+}
+
+.fixedImageDiv2 {
+  left: 15%;
+  top: 30%;
+}
+
+.fixedImageDiv3 {
+  right: 15%;
+  top: 35%;
+}
+.fixedImageDiv4 {
+  left: 10%;
+  top: 50%;
+}
+.fixedImageDiv5 {
+  width: 400px;
+  right: 8%;
+  top: 50%;
+}
+
+/********************************Static Social******************************/
+.staticSocialIconsContainer {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  backdrop-filter: blur(10);
+  z-index: 5;
+  bottom: 15%;
+  right: 0%;
+  box-shadow: var(--box-shadow);
+  padding: 10px;
+  background-color: white;
+}
+.staticSocialIconsContainer a {
+  margin-bottom: 10px;
+  transition: all 0.3s linear;
+}
+
+.linkedin {
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+  color: #0a6b95;
+}
+.linkedin:hover {
+  color: #104b64;
+}
+.whatsapp {
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+  color: rgb(55, 198, 55);
+}
+.whatsapp:hover {
+  color: rgb(36, 169, 36);
+}
+
+.phone {
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+  color: blue;
+}
+.phone:hover {
+  color: rgb(5, 5, 102);
+}
+.instagram {
+  color: red;
+}
+.instagram:hover {
+  color: rgb(174, 10, 10);
+}
+/*****************************Service Container***************************/
+.serviceContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 2% 5%;
+  background-color: #2fac6524;
+}
+.individualServiceContianer {
+  width: 23%;
+  height: 40vh;
+  background: white;
+  border-radius: 40px;
+  text-align: center;
+  box-shadow: inset 0 5px 5px 1px rgba(0, 0, 0, 0.1);
+  padding: 30px 20px;
+  margin: 30px;
+}
+.individualServiceContianer img {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 10px;
+}
+.individualServiceContianer b {
+  font-size: 20px;
+}
+.individualServiceContianer p {
+  margin-top: 5px;
+  /* font-size: 18px; */
+}
+/***********************************Footer*****************************/
+.footerContainer {
+  margin-top: auto;
+  background-color: var(--primary-color);
+  width: 100%;
+  color: white;
+}
+
+.footerTop {
+  display: flex;
+  padding: 20px 5%;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 30px;
+  height: 45vh;
+  box-shadow: var(--box-shadow);
+}
+
+.footerTop h3 {
+  color: var(--white-color);
+  font-weight: lighter;
+  margin: 7px 0px;
+  font-size: 18px;
+  letter-spacing: 1.5px;
+}
+
+.footerLeft {
+  width: 40%;
+}
+
+.footerLeft img {
+  width: 250px;
+  margin-bottom: 10px;
+  filter: drop-shadow(1px 1px 1px white);
+}
+
+.footerRight {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.footerNavlinks a {
+  transition: all 0.3s linear;
+  margin: 0px 10px;
+  color: white;
+}
+
+.footerNavlinks a:hover {
+  color: var(--secondary-color);
+}
+
+.footerNavlinks {
+  margin-bottom: 10px;
+}
+
+.footerIcons {
+  transition: all 0.3s linear;
+  color: white;
+  margin: 10px 10px;
+}
+
+.footerIcons:hover {
+  color: var(--secondary-color);
+}
+.footerBottom {
+  background-color: white;
+  text-align: center;
+  color: var(--primary-color);
+  padding: 5px 0px;
+  letter-spacing: 1.5px;
+}
+/**********************************Testimonial Styling**********/
+.carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 5%;
+  transition: all 0.3s linear;
+}
+.individualFeedback {
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+  align-items: center;
+  text-align: center;
+  width: 20%;
+  margin: 0px 70px;
+}
+.individualFeedback img {
+  border-radius: 60px;
+  box-shadow: var(--inner-shadow);
+  padding: 10px;
+}
+.individualFeedback b {
+  margin-top: 10px;
+  color: var(--secondary-color);
+  font-size: 20px;
+}
+.individualFeedback p {
+  margin-top: 2px;
+}
+.carouselBtn {
+  transition: all 0.3s linear;
+  background-color: transparent;
+  border: none;
+  color: var(--secondary-color);
+}
+.carouselBtn:hover {
+  color: gray;
+  cursor: pointer;
+}
+
+/***********Responsive navbar****************************/
+.bars {
+  color: var(--secondary-color);
+  z-index: 5;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.toogleContainer {
+  background: rgba(255, 255, 255, 0.9);
+  border-bottom: 1px solid white;
+  position: fixed;
+  right: 0;
+  top: 10vh;
+  width: 55%;
+  height: 100vh;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  z-index: 5;
+  box-shadow: var(--box-shadow);
+}
+.toogleContainer a {
+  margin-bottom: 20px;
+}
+.toogleContainer button.navbarLink {
+  width: 20px;
+}
+
+.mobileNavbar {
+  display: none;
+}
+.webNavbar {
+  display: flex;
+}
+
+/****************Responsive Design*******************/
+@media screen and (min-width: 300px) and (max-width: 768px) {
+  .mobileNavbar {
+    display: flex;
+  }
+  .webNavbar {
+    display: none;
+  }
+  .navbar {
+    height: 7vh;
+  }
+  .individualServiceContianer {
+    width: 100%;
+  }
+  .individualFeedback {
+    width: 45%;
+  }
+  .heading {
+    font-size: 2rem;
+  }
+  .fixedImageDiv,
+  .fixedImageDiv2,
+  .fixedImageDiv3,
+  .fixedImageDiv4,
+  .fixedImageDiv5 {
+    display: none;
+  }
+  .heroContentSection p {
+    padding: 0px 10%;
+  }
+  .heroContentSection h1:first-child {
+    font-size: 2.5rem;
+  }
+  .heroImageContainer img {
+    width: 70%;
+    height: 95%;
+  }
+  .footerTop {
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 30px;
+    height: 100%;
+    box-shadow: var(--box-shadow);
+  }
+  .footerLeft,
+  .footerRight {
+    width: 100%;
+  }
+  .footerNavlinks a {
+    transition: all 0.3s linear;
+    margin: 0px;
+    margin-right: 10px;
+
+    color: white;
+  }
+  .footerBottom {
+    padding: 20px;
+  }
+}

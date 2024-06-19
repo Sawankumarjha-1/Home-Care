@@ -1,0 +1,95 @@
+.accessMainContainer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+
+  min-height: 100vh;
+}
+.accessHiring {
+  width: 50%;
+}
+.accessWorker {
+  width: 50%;
+  background-color: white;
+}
+.accessHiring {
+  background-color: #abe5d84f;
+}
+.accessHiring,
+.accessWorker {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 5%;
+  text-align: center;
+}
+.accessHiring h1,
+.accessWorker h1 {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+}
+.accessHiring h1 span,
+.accessWorker h1 span {
+  color: var(--secondary-color);
+}
+.accessHiring p a,
+.accessWorker p a {
+  color: var(--primary-color);
+}
+.accessHiring p a:hover,
+.accessWorker p a:hover {
+  opacity: 0.6;
+}
+.accessLoginBtn,
+.accessLoginBtn2 {
+  padding: 10px 20px;
+  box-shadow: var(--box-shadow);
+  transition: all 0.3s linear;
+  border-radius: 5%;
+  text-transform: capitalize;
+}
+.accessLoginBtn {
+  background: linear-gradient(
+    45deg,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+  color: var(--white-color);
+}
+.accessLoginBtn2 {
+  background-color: white;
+  color: var(--secondary-color);
+}
+.accessLoginBtn:hover {
+  box-shadow: var(--inner-shadow);
+  color: #eee;
+  opacity: 0.8;
+}
+.accessLoginBtn2:hover {
+  box-shadow: var(--inner-shadow);
+  color: gray;
+  opacity: 0.8;
+}
+
+/**************************Responsive Code**************/
+@media screen and (min-width: 300px) and (max-width: 768px) {
+  .accessMainContainer {
+    display: flex;
+    flex-direction: column;
+    min-height: auto;
+  }
+
+  .accessHiring {
+    padding-top: 50px;
+    width: 100vw;
+  }
+  .accessWorker {
+    width: 100vw;
+    background-color: white;
+  }
+  .accessHiring h1,
+  .accessWorker h1 {
+    font-size: 2rem;
+  }
+}

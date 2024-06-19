@@ -1,0 +1,301 @@
+.main {
+  padding-top: 7rem;
+  min-height: 80vh;
+}
+.Loading {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+/***********************************Hero Section*****************/
+.heroSection {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.heroImageContainer {
+  padding-top: 10px;
+  display: flex;
+  width: 100%;
+  height: 70%;
+  justify-items: center;
+  justify-content: center;
+}
+.heroImageContainer img {
+  width: 40%;
+  height: 95%;
+}
+.heroContentSection {
+  width: 100%;
+  text-align: center;
+}
+.heroContentSection p {
+  padding: 0px 15%;
+  padding-bottom: 10px;
+}
+.heroContentSection h1:first-child {
+  padding: 0px 5%;
+  font-size: 3rem;
+  color: var(--primary-color);
+  line-height: 52px;
+  filter: drop-shadow(var(--box-shadow));
+}
+.heroContentSection h1 span {
+  color: var(--secondary-color);
+}
+.heroContentSection h2:first-child {
+  font-size: 5rem;
+}
+
+/************************************Search Container*********************** */
+.mainSearchContainer {
+  padding: 10px 15%;
+}
+.searchContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 10px;
+  height: 5vh;
+  transition: all 0.3s linear;
+}
+
+.searchInput,
+.searchSelect {
+  transition: all 0.3s linear;
+  padding: 10px 20px;
+  border: none;
+  border-right: 1px solid var(--secondary-color);
+  border-left: 1px solid var(--secondary-color);
+  width: 120px;
+  margin-right: 10px;
+  border-radius: 40px;
+  outline: none;
+  font-size: medium;
+  box-shadow: var(--box-shadow);
+}
+.searchSelect {
+  width: 200px;
+}
+.categorySearch {
+  width: 450px;
+}
+
+.searchInput:hover {
+  box-shadow: inset 0 2px 10px 0 rgba(91, 91, 93, 0.37);
+}
+.searchbtn {
+  transition: all 0.3s linear;
+
+  border: none;
+  background-color: var(--secondary-color);
+  padding: 10px 20px;
+  color: white;
+  border-radius: 40px;
+  cursor: pointer;
+  box-shadow: var(--box-shadow);
+}
+.searchbtn:hover {
+  box-shadow: var(--inner-shadow);
+  color: var(--primary-color);
+}
+/************************************************************************/
+
+.searchCardContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2% 5%;
+}
+.individualSearchCard {
+  display: flex;
+  flex-direction: row;
+  background: rgba(255, 255, 255, 0.35);
+  box-shadow: 0 8px 32px 0 rgba(91, 91, 93, 0.37);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border-radius: 10px;
+  border: 1px solid rgba(246, 246, 246, 0.18);
+  width: 35%;
+  margin: 50px;
+  padding: 10px;
+  height: 22vh;
+}
+.searchImageCardConatiner {
+  top: -10px;
+  left: -50px;
+  position: absolute;
+  box-shadow: inset 0 2px 10px 0 rgba(91, 91, 93, 0.37);
+  border-radius: 50%;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-color: #eee;
+}
+.searchCardContentContainer {
+  display: flex;
+  flex-direction: column;
+  margin-left: 25%;
+}
+.searchImageCardConatiner img {
+  border-radius: 50%;
+}
+.searchCardServiceContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 10px 0px;
+}
+.nameContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 7px;
+}
+.nameContainer b {
+  font-size: 18px;
+}
+.nameContainer .verifyIcon {
+  width: 25px;
+  height: 25px;
+}
+.searchCardContentContainer small {
+  margin-bottom: 4px;
+}
+.searchCardContentContainer small span {
+  font-weight: bold;
+}
+.searchCardServiceContainer .serviceIcons {
+  transition: all 0.3s linear;
+  margin-right: 7px;
+  width: 30px;
+  height: 30px;
+  box-shadow: var(--box-shadow);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.bookNow,
+.individualServiceBook {
+  position: absolute;
+  bottom: -20px;
+  right: 10px;
+  padding: 10px 20px;
+  background: linear-gradient(
+    45deg,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+  filter: drop-shadow(var(--box-shadow));
+  transition: all 0.3s linear;
+  border-radius: 5%;
+  color: var(--white-color);
+  text-transform: capitalize;
+}
+button.individualServiceBook {
+  outline: none;
+  cursor: pointer;
+  border: none;
+}
+
+.bookNow:hover,
+.individualServiceBook:hover {
+  color: #eee;
+  opacity: 0.8;
+  transform: scale(0.9);
+}
+
+/************************Individual Search Styling***********************/
+.generalIndividualContainer {
+  padding-top: 13vh;
+  padding-left: 5%;
+  padding-right: 5%;
+  display: flex;
+  flex-direction: row;
+}
+.individualCardDetailsImage {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+}
+.individualCardDetailsImage img {
+  padding: 20px;
+  border-radius: 50%;
+  background-color: white;
+}
+.generalIndivdualDetails {
+  width: 60%;
+  padding: 10px;
+}
+.generalIndivdualDetails div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.generalIndivdualDetails div p {
+  margin-top: 5px;
+  width: 50%;
+}
+
+.generalIndivdualDetails div.serviceDetails {
+  position: relative;
+  padding: 20px;
+  box-shadow: 0px 6px 15px -3px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+/**********************Responsive Code************************/
+@media screen and (min-width: 300px) and (max-width: 768px) {
+  .heroContentSection h1:first-child {
+    padding: 0px 5%;
+    font-size: 1.5rem;
+  }
+  .heroContentSection p {
+    padding: 0px 5%;
+    padding-bottom: 10px;
+  }
+  .searchSelect {
+    width: 100px;
+  }
+  .categorySearch {
+    width: 170px;
+  }
+
+  .individualSearchCard {
+    flex-direction: column;
+    width: 100%;
+    margin: 20px 10px;
+    padding: 10px;
+    height: auto;
+  }
+  .searchImageCardConatiner img {
+    display: none;
+  }
+  .searchCardContentContainer {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0px;
+  }
+  .generalIndividualContainer {
+    flex-direction: column;
+  }
+  .individualCardDetailsImage {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+  }
+
+  .generalIndivdualDetails {
+    width: 100vw;
+  }
+}

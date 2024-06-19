@@ -1,0 +1,99 @@
+.main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.error {
+  color: red;
+  margin: 0px;
+  margin-bottom: 10px;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  box-shadow: var(--box-shadow);
+  align-items: center;
+}
+.form h3 {
+  color: var(--primary-color);
+}
+.form h3 span {
+  color: var(--secondary-color);
+}
+.form h3 {
+  color: var(--primary-color);
+  margin-bottom: 15px;
+}
+.form img {
+  width: 100px;
+  height: 100px;
+  padding: 20px;
+  box-shadow: var(--inner-shadow);
+  border-radius: 50%;
+}
+
+.form input {
+  padding: 10px 20px;
+  width: 280px;
+  margin-bottom: 15px;
+  border: 1px solid #eee;
+  outline-color: gray;
+  outline-width: 2px;
+  font-size: 16px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+.form small {
+  margin-top: 10px;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+.form small.forget {
+  font-size: 15px;
+  cursor: pointer;
+  color: var(--primary-color);
+}
+.form small.forget:hover {
+  color: gray;
+}
+.form small a {
+  font-size: 15px;
+  color: var(--primary-color);
+}
+.form small a:hover {
+  color: gray;
+}
+.contactBtn {
+  transition: all 0.3s linear;
+  padding: 10px 20px;
+  cursor: pointer;
+  box-shadow: var(--box-shadow);
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  font-family: monospace;
+  text-transform: uppercase;
+  font-size: 16px;
+  color: white;
+}
+.contactBtn:first-child {
+  background-color: var(--primary-color);
+  margin-right: 20px;
+}
+.contactBtn:last-child {
+  background-color: var(--secondary-color);
+  margin-right: 20px;
+}
+.contactBtn:first-child:hover {
+  background-color: white;
+  color: var(--primary-color);
+  box-shadow: var(--inner-shadow);
+}
+.contactBtn:last-child:hover {
+  background-color: white;
+  color: var(--secondary-color);
+  box-shadow: var(--inner-shadow);
+}

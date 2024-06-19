@@ -1,0 +1,37 @@
+.mesageContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+}
+.mesageContainer h1 {
+  margin: 0px;
+  margin-top: 10px;
+}
+
+.mesageContainer a {
+  margin-top: 20px;
+  transition: all 0.3s linear;
+  padding: 10px 20px;
+  cursor: pointer;
+  box-shadow: var(--box-shadow);
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  font-family: monospace;
+  text-transform: uppercase;
+  font-size: 16px;
+  color: white;
+  width: 200px;
+  background-color: var(--secondary-color);
+  text-align: center;
+}
+
+.mesageContainer a:hover {
+  background-color: white;
+  color: var(--secondary-color);
+  box-shadow: var(--inner-shadow);
+}
