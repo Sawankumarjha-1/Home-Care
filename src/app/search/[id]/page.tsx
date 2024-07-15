@@ -21,7 +21,7 @@ function page() {
       )
       .then((response) => {
         setData(response.data.data);
-
+        console.log(response.data.data[0].avatar);
         setLoading(false);
       })
       .catch((err) => {
@@ -63,7 +63,12 @@ function page() {
     <main>
       <div className={searchStyle.generalIndividualContainer}>
         <div className={searchStyle.individualCardDetailsImage}>
-          <Image src={Dummy} alt="Profile Photo" width={300} height={300} />
+          <Image
+            src={data[0].avatar}
+            alt="Profile Photo"
+            width={300}
+            height={300}
+          />
         </div>
         <div className={searchStyle.generalIndivdualDetails}>
           <div>
